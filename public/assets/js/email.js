@@ -6,9 +6,15 @@ const data = {
   'access_token': '93mt44zcoj8vftid4ucpo676'
 }
 
-onSuccess = () => console.log('Email successfully sent!')
+onSuccess = () => {
+  sendButton.val('Email Sent!');
+  sendButton.prop('disabled', false);
+}
 
-onError = () => console.log('Failed to send email!')
+onError = () => {
+  sendButton.val('Failed to send!');
+  sendButton.prop('disabled', false);
+}
 
 sendEmail = () => {
   sendButton.val('Sending…');
