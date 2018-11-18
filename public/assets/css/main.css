@@ -2954,6 +2954,21 @@ input, select, textarea {
 
 	}
 
+	@media screen and (min-width: 1800px) {
+
+		/* Basic */
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+			.image.fit img {
+				width: 100%;
+				max-height: 195px;
+			}
+
+	}
+
 /* Large */
 
 	@media screen and (max-width: 1280px) {
